@@ -1,3 +1,5 @@
+import terser from '@rollup/plugin-terser';
+
 const config = {
   input: {
     tools: 'src/tools.js',
@@ -9,10 +11,11 @@ const config = {
       format: 'es', // ES Mdoule
     },
     {
-      name: 'tools', // window 下的全域名稱
+      name: 'tools', // global name under window
       dir: 'dist',
       entryFileNames: '[name].js',
-      format: 'iife', // 給瀏覽器
+      format: 'iife', // for browser
+      plugins: [terser()], // compress js
     },
   ],
 };
