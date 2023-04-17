@@ -18,4 +18,7 @@ npm run watch
 npm run build
 ```
 
+---
+
+簡報：[rollup.js 快速入門](https://hackmd.io/@hank-hsiao/Hy4m7Ccfh)
 
