@@ -29,6 +29,7 @@ const config = {
       entryFileNames: '[name].js',
       format: 'iife', // for browser
       plugins: [terser()], // compress js
+      sourcemap: true,
     },
   ],
   plugins: [
