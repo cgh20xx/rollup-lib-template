@@ -4,7 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 
 const config = {
   input: {
-    tools: 'src/tools.js',
+    tools: 'src/index.js',
   },
   output: [
     {
