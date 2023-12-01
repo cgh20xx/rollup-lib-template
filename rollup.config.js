@@ -33,7 +33,7 @@ const config = {
     },
   ],
   plugins: [
-    resolve(), // 使 Rollup 能找到外部的 npm 模組
+    resolve(), // 使 Rollup 能解析 node_modules 模組
     commonjs(), // 使 Rollup 能將 CommonJS Module 轉換成 ES Module
   ],
   // external: ['lodash-es'], // 外部模組不會被打包，需額外設定 output.globals
